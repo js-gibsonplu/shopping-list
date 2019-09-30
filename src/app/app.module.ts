@@ -5,12 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { RecipesComponent } from './components/recipes/recipes.component';
+import { RecipesListComponent } from './components/recipes/recipes-list/recipes-list.component';
+import { RecipesItemComponent } from './components/recipes/recipes-list/recipes-item/recipes-item.component';
+import { RecipesDetailComponent } from './components/recipes/recipes-detail/recipes-detail.component';
+import { ShoppingListComponent } from './components/shopping-list/shopping-list.component';
+import { ShoppingEdtComponent } from './components/shopping-list/shopping-edt/shopping-edt.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    RecipesComponent
+    RecipesComponent,
+    RecipesListComponent,
+    RecipesItemComponent,
+    RecipesDetailComponent,
+    ShoppingListComponent,
+    ShoppingEdtComponent
   ],
   imports: [
     BrowserModule,
