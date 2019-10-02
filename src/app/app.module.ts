@@ -10,7 +10,7 @@ import { RecipesListComponent } from './components/recipes/recipes-list/recipes-
 import { RecipesItemComponent } from './components/recipes/recipes-list/recipes-item/recipes-item.component';
 import { RecipesDetailComponent } from './components/recipes/recipes-detail/recipes-detail.component';
 import { ShoppingListComponent } from './components/shopping-list/shopping-list.component';
-import { ShoppingEdtComponent } from './components/shopping-list/shopping-edt/shopping-edt.component';
+import { ShoppingEditComponent } from './components/shopping-list/shopping-edit/shopping-edit.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { ShoppingEdtComponent } from './components/shopping-list/shopping-edt/sh
     RecipesItemComponent,
     RecipesDetailComponent,
     ShoppingListComponent,
-    ShoppingEdtComponent
+    ShoppingEditComponent
   ],
   imports: [
     BrowserModule,
