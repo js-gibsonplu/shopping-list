@@ -1,0 +1,19 @@
+/* *Overrides base Bootstrap styling */
+nav,
+.navbar,
+.navbar-default a {
+  color: white;
+}
+
+.icon-bar {
+  background-color: gray !important;
+}
+
+.navbar-toggle {
+  border-color: gray !important;
+}
+
+.navbar-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* * */
