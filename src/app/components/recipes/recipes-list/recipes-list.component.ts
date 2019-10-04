@@ -12,6 +12,12 @@ export class RecipesListComponent implements OnInit {
       'These cookies are bomb.com',
       'https://i2.wp.com/www.livewellbakeoften.com/wp-content/uploads/2018/08/MM-Chocolate-Chip-Cookies-6.jpg?resize=500%2C500&ssl=1',
       'some chocolate chip cookies with M&Ms'
+    ),
+    new Recipe(
+      'Cookies From Home',
+      'These cookies are bomb.com',
+      'https://i2.wp.com/www.livewellbakeoften.com/wp-content/uploads/2018/08/MM-Chocolate-Chip-Cookies-6.jpg?resize=500%2C500&ssl=1',
+      'some chocolate chip cookies with M&Ms'
     )
   ];
 
