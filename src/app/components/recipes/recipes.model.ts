@@ -8,6 +8,6 @@ export class Recipe {
         this.name = name;
         this.description = desc;
         this.imgPath = imgpath;
-        this.imgPath = imgalt;
+        this.imgAlt = imgalt;
     }
 }
