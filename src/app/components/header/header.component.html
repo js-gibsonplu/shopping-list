@@ -1,17 +1,19 @@
 <nav class="navbar navbar-default" style="background-color: rgb(197, 217, 235)">
     <button (click)="onAddServer(testButton.value)">Click</button>
     <input #testButton type="text">
-
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
-        <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
-      </button>
-      <a routerLink="/" class="navbar-brand">Recipe Book</a>
-    </div>
-    <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Recipes</a></li>
+    
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
+          <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+        </button>
+        <a routerLink="/" class="navbar-brand">Recipe Book</a>
+      </div>
+      <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Recipes</a></li>
+          <!-- *ng-content can be used to display anything between the open/close tags of where this component is used (in its parent component) -->
+          <li><a href="#"><ng-content></ng-content></a></li>
         <li><a href="#">Shopping List</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,10 +10,13 @@ export class HeaderComponent implements OnInit {
   collapsed = true;
   constructor() {}
 
+  @ViewChild('testButton', { static: true }) testButton: ElementRef;
+
   ngOnInit() {}
 
-  onAddServer(data) {
-    this.serverCreated.emit();
-    console.log(`this is from header: ${data}`);
+  onAddServer() {
+    // this.serverCreated.emit();
+    // console.log(`this is from header: ${data}`);
+    console.log(this.testButton.nativeElement.value)
   }
 }
