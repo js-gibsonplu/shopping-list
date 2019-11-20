@@ -1,7 +1,4 @@
 <nav class="navbar navbar-default" style="background-color: rgb(197, 217, 235)">
-  <button (click)="onAddServer(testButton.value)">Click</button>
-  <input #testButton type="text" />
-
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
@@ -13,10 +10,10 @@
       <ul class="nav navbar-nav">
         <li (click)="onActivateRecipes()"><a href="#">Recipes</a></li>
         <!-- *ng-content can be used to display anything between the open/close tags of where this component is used (in its parent component) -->
-        <li (click)="onActivateShopping()">
+        <!-- <li>
           <a href="#"><ng-content></ng-content></a>
-        </li>
-        <li><a href="#">Shopping List</a></li>
+        </li> -->
+        <li (click)="onActivateShopping()"><a href="#">Shopping List</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">

@@ -24,10 +24,4 @@ export class HeaderComponent implements OnInit {
   onActivateShopping() {
     this.shoppingPageActive.emit();
   }
-
-  onAddServer() {
-    // this.serverCreated.emit();
-    // console.log(`this is from header: ${data}`);
-    console.log(this.testButton.nativeElement.value);
-  }
 }
