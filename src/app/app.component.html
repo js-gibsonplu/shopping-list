@@ -1,9 +1,9 @@
 <app-header (serverCreated)="onServerAdded()">Test</app-header>
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <app-recipes *ngIf="recipesPageActive" (recipesPageActive)=true></app-recipes>
-            <app-shopping-list (shoppingPageActive)=true *ngIf="shoppingPageActive"></app-shopping-list>
-        </div>
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="recipesPageActive" (recipesPageActive)="(true)"></app-recipes>
+      <app-shopping-list (shoppingPageActive)="(true)" *ngIf="shoppingPageActive"></app-shopping-list>
     </div>
+  </div>
 </div>

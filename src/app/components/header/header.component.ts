@@ -15,8 +15,7 @@ export class HeaderComponent implements OnInit {
 
   @ViewChild('testButton', { static: true }) testButton: ElementRef;
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   onActivateRecipes() {
     this.recipesPageActive.emit();
