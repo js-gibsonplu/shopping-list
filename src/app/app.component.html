@@ -1,10 +1,10 @@
 <!-- * The content passed between the app-header tags will be projected into the header component via <ng-content> -->
-<app-header (shoppingPageActive)="showShoppingPage()">Test</app-header>
+<app-header (featureActive)="showFeature($event)">Test</app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes *ngIf="recipesPageActive" (recipesPageActive)="(true)"></app-recipes>
-      <app-shopping-list  *ngIf="shoppingPageActive == true"></app-shopping-list>
+      <app-recipes *ngIf="displayFeature === 'recipes'"></app-recipes>
+      <app-shopping-list  *ngIf="displayFeature === 'shopping'"></app-shopping-list>
     </div>
   </div>
 </div>

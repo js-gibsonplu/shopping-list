@@ -6,9 +6,7 @@ import { Component, OnInit, Output, Input, EventEmitter, ViewChild, ElementRef }
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  @Output() serverCreated = new EventEmitter<any>();
-  @Output() recipesPageActive = new EventEmitter<any>();
-  @Output() shoppingPageActive = new EventEmitter<any>();
+  @Output() featureActive = new EventEmitter<string>();
 
   collapsed = true;
   constructor() {}
@@ -17,11 +15,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {}
 
-  onActivateRecipes() {
-    this.recipesPageActive.emit();
-  }
-
-  onActivateShopping() {
-    this.shoppingPageActive.emit();
+  onActivateFeature(choice: string) {
+    this.featureActive.emit(choice);
   }
 }

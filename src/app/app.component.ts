@@ -8,14 +8,10 @@ import { Component, Input, Output } from '@angular/core';
 export class AppComponent {
   title = 'shopping-list';
   @Output() recipesPageActive: boolean;
-  shoppingPageActive = false;
+  displayFeature = 'recipes';
 
-  onServerAdded(data) {
-    // console.log(`This is from app-component: ${data}`);
-    console.log(`the app-component says 12 + 12 =`, 12 + 12);
-  }
 
-  showShoppingPage() {
-    this.shoppingPageActive = true;
+  showFeature(choice: string) {
+    this.displayFeature = choice;
   }
 }
