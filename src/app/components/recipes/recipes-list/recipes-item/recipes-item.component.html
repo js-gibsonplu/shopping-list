@@ -1,15 +1,18 @@
-<div class="recipe-item-container">
-  <a href="#" class="list-group-item clearfix">
+<div class="recipe-item-container" (click)="loadRecipeIntoDetail($event.target.title)" title="{{recipe.title}}">
+  <a href="#" class="list-group-item clearfix" title="{{recipe.title}}">
     <div class="pull-left">
-      <h3 class="list-group-item-heading">{{ recipe.name }}</h3>
-      <p class="list-group-item-text">{{ recipe.description }}</p>
+      <h3 title="{{recipe.title}}" class="list-group-item-heading">{{ recipe.name }}</h3>
+      <p title="{{recipe.title}}" class="list-group-item-text">{{ recipe.description }}</p>
     </div>
     <span class="pull-right">
       <img
         src="{{ recipe.imgPath }}"
         alt="{{ recipe.imgAlt }}"
         class="img-responsive recipe-item-img"
+        title="{{recipe.title}}"
       />
     </span>
   </a>
 </div>
+
+<!-- emit event that a single item was clicked, get this event to recipes component -->

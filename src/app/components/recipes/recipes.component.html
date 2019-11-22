@@ -4,6 +4,7 @@
         <app-recipes-list></app-recipes-list>
     </div>
     <div class="col-md-7">
-        <app-recipes-detail></app-recipes-detail>
+        <app-recipes-detail (showRecipeInDetail)="consoleRecipe(event)"></app-recipes-detail>
     </div>
 </div>
+<!-- pass event data to recipess detail which recipe was selected -->

@@ -11,13 +11,15 @@ export class RecipesListComponent implements OnInit {
       'Cookies From Home',
       'These cookies are bomb.com',
       'https://i2.wp.com/www.livewellbakeoften.com/wp-content/uploads/2018/08/MM-Chocolate-Chip-Cookies-6.jpg?resize=500%2C500&ssl=1',
-      'some chocolate chip cookies with M&Ms'
+      'some chocolate chip cookies with M&Ms',
+      'homeCookies'
     ),
     new Recipe(
-      'Cookies From Home',
-      'These cookies are bomb.com',
+      'Cookies From Far Away',
+      'These cookies are great',
       'https://i2.wp.com/www.livewellbakeoften.com/wp-content/uploads/2018/08/MM-Chocolate-Chip-Cookies-6.jpg?resize=500%2C500&ssl=1',
-      'some chocolate chip cookies with M&Ms'
+      'some chocolate chip cookies with M&Ms',
+      'farAwayCookies'
     )
   ];
 
