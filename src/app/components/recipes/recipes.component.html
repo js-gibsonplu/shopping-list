@@ -1,10 +1,16 @@
 <div class="row">
-    <h2>Recipes List</h2>
-    <div class="col-md-5">
-        <app-recipes-list></app-recipes-list>
-    </div>
-    <div class="col-md-7">
-        <app-recipes-detail (showRecipeInDetail)="consoleRecipe(event)"></app-recipes-detail>
-    </div>
+  <h2>Recipes List</h2>
+  <div class="col-md-5">
+    <app-recipes-list
+      (recipeThatWasSelected)="selectedRecipe = $event"
+    ></app-recipes-list>
+  </div>
+  <div class="col-md-7">
+    <app-recipes-detail
+      *ngIf="selectedRecipe; else recipeInfoText"
+      [recipe]="selectedRecipe"
+    >
+    </app-recipes-detail>
+    <ng-template #recipeInfoText><h4>Please select a recipe</h4></ng-template>
+  </div>
 </div>
-<!-- pass event data to recipess detail which recipe was selected -->
