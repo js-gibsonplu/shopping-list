@@ -21,11 +21,13 @@ import { ShoppingEditComponent } from './components/shopping-list/shopping-edit/
     RecipesItemComponent,
     RecipesDetailComponent,
     ShoppingListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
