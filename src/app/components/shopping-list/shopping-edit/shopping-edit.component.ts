@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, EventEmitter, Output } from '@angular/core';
+import { Ingredient } from 'src/app/shared-data/ingredient.model';
 
 @Component({
   selector: 'app-shopping-edit',
@@ -11,16 +12,22 @@ export class ShoppingEditComponent implements OnInit {
   nameInputValue: string;
 
   @ViewChild('amountInputElement', { static: true }) amountInputElement: ElementRef;
-  amountInputValue: string;
+  amountInputValue: number;
+
+  @Output() ingAdded = new EventEmitter<Ingredient>();
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  // TODO - get this info to create a new list item in shopping list 
+  // TODO - reset input values on submit
   inputInfo() {
     console.log(`ngModel name value = ${this.nameInputValue}`);
     console.log(`ngModel input value = ${this.amountInputValue}`);
+    const newIng = new Ingredient(this.nameInputValue, this.amountInputValue);
+    this.ingAdded.emit(newIng);
+    this.amountInputElement.nativeElement.value = '';
+    this.amountInputElement.nativeElement.value = '';
   }
 }
