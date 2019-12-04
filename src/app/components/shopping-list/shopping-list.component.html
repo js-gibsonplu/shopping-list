@@ -4,7 +4,9 @@
     <app-shopping-edit (ingAdded)="addNewIng($event)"></app-shopping-edit>
     <hr />
     <ul class="list-group" *ngFor="let ingredient of ingredients">
-      <a class="list-group-item" style="cursor: pointer;">{{ ingredient.name }} x {{ ingredient.amount }}</a>
+      <a class="list-group-item" style="cursor: pointer;"
+        >{{ ingredient.name }} x {{ ingredient.amount }}</a
+      >
     </ul>
   </div>
 </div>

@@ -23,11 +23,7 @@ export class ShoppingEditComponent implements OnInit {
 
   // TODO - reset input values on submit
   inputInfo() {
-    console.log(`ngModel name value = ${this.nameInputValue}`);
-    console.log(`ngModel input value = ${this.amountInputValue}`);
     const newIng = new Ingredient(this.nameInputValue, this.amountInputValue);
     this.ingAdded.emit(newIng);
-    this.amountInputElement.nativeElement.value = '';
-    this.amountInputElement.nativeElement.value = '';
   }
 }
