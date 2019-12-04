@@ -13,6 +13,7 @@ button:hover:first-of-type {
   text-decoration-line: underline;
   text-decoration-color: rgb(0, 148, 0);
   text-decoration-style: wavy;
+  transition: all 0.3s;
 }
 
 button:hover:nth-of-type(2) {
@@ -21,6 +22,7 @@ button:hover:nth-of-type(2) {
   text-decoration-line: underline;
   text-decoration-color: rgb(218,0,0);
   text-decoration-style: wavy;
+  transition: all 0.3s;
 }
 
 button:hover:nth-of-type(3) {
@@ -28,4 +30,5 @@ button:hover:nth-of-type(3) {
   text-decoration-line: underline;
   text-decoration-color: rgb(255, 230, 0);
   text-decoration-style: wavy;
+  transition: all 0.3s;
 }
