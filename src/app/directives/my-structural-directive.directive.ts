@@ -6,7 +6,7 @@ import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
   selector: '[appMyStructuralDirective]'
 })
 export class MyStructuralDirectiveDirective {
-  @Input() set unless(condition: boolean) {
+  @Input() set appMyStructuralDirective(condition: boolean) {
     if (!condition) {
       this.viewContainerReference.createEmbeddedView(this.templateReference);
     } else {
