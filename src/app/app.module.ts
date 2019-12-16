@@ -12,6 +12,7 @@ import { RecipesDetailComponent } from './components/recipes/recipes-detail/reci
 import { ShoppingListComponent } from './components/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './components/shopping-list/shopping-edit/shopping-edit.component';
 import { CustomDirectiveDirective } from './directives/custom-directive.directive';
+import { MyStructuralDirectiveDirective } from './directives/my-structural-directive.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CustomDirectiveDirective } from './directives/custom-directive.directiv
     ShoppingListComponent,
     ShoppingEditComponent,
     CustomDirectiveDirective,
+    MyStructuralDirectiveDirective,
   ],
   imports: [
     BrowserModule,
