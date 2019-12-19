@@ -6,6 +6,11 @@
       <p appCustomDirective>Style this with custom directive!</p>
       <app-recipes *ngIf="displayFeature === 'recipes'"></app-recipes>
       <app-shopping-list  *ngIf="displayFeature === 'shopping'"></app-shopping-list>
+      <div [ngSwitch]="myVal">
+        <p *ngSwitchCase="5">Five</p>
+        <p *ngSwitchCase="10">Ten</p>
+        <p *ngSwitchCaseDefault>Default</p>
+      </div>
     </div>
   </div>
 </div>

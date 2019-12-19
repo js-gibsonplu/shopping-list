@@ -6,6 +6,7 @@ import { Component, Input, Output } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  myVal=`Default`;
   title = 'shopping-list';
   @Output() recipesPageActive: boolean;
   displayFeature = 'recipes';
