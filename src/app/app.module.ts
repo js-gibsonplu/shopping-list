@@ -13,6 +13,7 @@ import { ShoppingListComponent } from './components/shopping-list/shopping-list.
 import { ShoppingEditComponent } from './components/shopping-list/shopping-edit/shopping-edit.component';
 import { CustomDirectiveDirective } from './directives/custom-directive.directive';
 import { MyStructuralDirectiveDirective } from './directives/my-structural-directive.directive';
+import { DropdownDirective } from './shared-data/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MyStructuralDirectiveDirective } from './directives/my-structural-direc
     ShoppingEditComponent,
     CustomDirectiveDirective,
     MyStructuralDirectiveDirective,
+    DropdownDirective,
   ],
   imports: [
     BrowserModule,
