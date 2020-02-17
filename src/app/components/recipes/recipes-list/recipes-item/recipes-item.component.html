@@ -1,6 +1,6 @@
 <div
   class="recipe-item-container"
-  (click)="loadRecipeIntoDetail($event.target.title)"
+  (click)="onSelectedRecipe($event.target.title)"
   title="{{ recipe.title }}"
 >
   <a href="#" class="list-group-item clearfix" title="{{ recipe.title }}">
