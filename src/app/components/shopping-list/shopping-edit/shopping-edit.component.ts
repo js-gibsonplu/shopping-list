@@ -30,7 +30,7 @@ export class ShoppingEditComponent implements OnInit {
   }
 
   removeAllIngredients() {
-    console.log(`removing ALL ingredients`)
+    console.log(`removing ALL ingredients`);
     this.shoppingListService.onRemoveALLIngredients();
   }
 }
