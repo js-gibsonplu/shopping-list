@@ -15,4 +15,12 @@ export class ShoppingListService {
   onAddNewIngredient(ingredient: Ingredient) {
     this.ingredients.push(ingredient);
   }
+
+  onRemoveIngredient(index: number) {
+    this.ingredients.slice(index, 1);
+  }
+
+  onRemoveALLIngredients() {
+    this.ingredients = [];
+  }
 }
