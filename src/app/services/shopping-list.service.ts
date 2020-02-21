@@ -6,8 +6,6 @@ import { Ingredient } from '../shared-data/ingredient.model';
 })
 export class ShoppingListService {
   ingredients: Ingredient[] = [
-    new Ingredient(`apples`, 12),
-    new Ingredient('bacon', 500)
   ];
 
   constructor() { }

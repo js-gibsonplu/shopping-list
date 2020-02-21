@@ -17,16 +17,4 @@ export class ShoppingListComponent implements OnInit {
     this.ingredients = this.shoppingListService.ingredients;
   }
 
-  addNewIng(ingredient) {
-    this.shoppingListService.onAddNewIngredient(ingredient);
-  }
-
-  removeIngredient(index) {
-    this.shoppingListService.onRemoveIngredient(index);
-  }
-
-  removeAllIngredients() {
-    this.shoppingListService.onRemoveALLIngredients();
-  }
-
 }
