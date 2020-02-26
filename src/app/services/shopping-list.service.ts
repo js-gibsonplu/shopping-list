@@ -29,4 +29,9 @@ export class ShoppingListService {
   onRemoveALLIngredients() {
     this.ingredients = [];
   }
+
+  importIngredientsFromRecipe(ingredientsFromRec: Ingredient[]) {
+    this.ingredients.push(...ingredientsFromRec);
+    this.ingredientsChanged.emit(this.ingredients.slice());
+  }
 }
